@@ -22,6 +22,10 @@ function createSingleListFormArray(arr = []) {
 
 
 function printSingleList(head) {
+  if (!head) {
+    console.log('')
+    return ;
+  }
   let cur = head
   let arr = []
   while (cur !== null) {
